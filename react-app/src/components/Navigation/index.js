@@ -36,8 +36,8 @@ function Navigation({ isLoaded }){
 				<div className='barLinks'>
 					<NavLink className='Home' exact to="/">
 						<div className='navaImage'>
-						<img src='../../../images/nava.png' alt='image'/>
-						<div className='navaFont'>Xpress Prints</div>
+						{/* <img src='../../../images/nava.png' alt='image'/> */}
+						{/* <div className='navaFont'>Malak Kourani</div> */}
 						</div>
 					</NavLink>
 					{
@@ -53,8 +53,8 @@ function Navigation({ isLoaded }){
 						: 	
 						<>
 						<div className='topBarOrg'>
-						<NavLink className = 'About' exact to = '/login'>Sign In</NavLink>
-						<NavLink className = 'About' exact to ='/signup'> Sign Up</NavLink>
+						{/* <NavLink className = 'About' exact to = '/login'>Sign In</NavLink>
+						<NavLink className = 'About' exact to ='/signup'> Sign Up</NavLink> */}
 						</div>
 						</>
 
