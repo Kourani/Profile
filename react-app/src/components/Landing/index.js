@@ -6,9 +6,7 @@ import * as help from "../../context/help"
 // import * as images from "../../../public/images"
 
 import OpenModalButton from "../OpenModalButton"
-import SignUpFormModal from "../Modals/SignupFormModal"
 import Information from "../Modals/Information"
-import LoginFormModal from "../Modals/LoginFormModal";
 
 import { useModal } from "../../context/Modal";
 
@@ -39,30 +37,6 @@ export default function Landing(){
     console.log(userState, 'userState')
 
 
-    function Quote(){
-
-        if (userState?.user?.id)
-        {
-            return(
-                <OpenModalButton
-                buttonText="Instant Quote"
-                onItemClick={closeMenu}
-                modalComponent={<Information userId={userState?.user?.id}/>}
-                />
-            )
-        }
-        else {
-            return(
-                <OpenModalButton
-                    buttonText="Instant Quote"
-                    onItemClick={closeMenu}
-                    modalComponent={<SignUpFormModal/>}
-                />
-            )
-        }
-    }
-
-
     const handleSubmit = async (e) => {
         e.preventDefault()
 
@@ -72,6 +46,14 @@ export default function Landing(){
 
     return (
         <>
+
+            <div class="image-container">
+                <div class="overlay"></div>
+                <h1>Malak Kourani, MBA, BS</h1>
+            </div>
+
+
+
             <div className="top">
 
                 {/* <div className="videoDiv">
@@ -82,9 +64,12 @@ export default function Landing(){
 
                 <div className="firstBox">
 
-                    <div className="theOut">
+                    {/* <div className="theOut">
+                        <img src='../../../images/intro.png' alt='image'/>
                         <div className="firstTitle">Malak Kourani, MBA, BS</div>
-                    </div>
+                    </div> */}
+
+
 
                     {/* <div className="secondVid">
                         <video autoPlay muted loop id='videoo'>

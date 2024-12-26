@@ -6,8 +6,6 @@ import { authenticate } from "./store/session";
 
 import ProtectedRoute from "./components/auth/ProtectedRoute"
 
-import SignupFormPage from "./components/SignupFormPage";
-import LoginFormPage from "./components/LoginFormPage";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer"
 
@@ -43,14 +41,6 @@ function App() {
 
       {isLoaded && (
         <Switch>
-
-          <Route path="/login" >
-            <LoginFormPage />
-          </Route>
-
-          <Route path="/signup">
-            <SignupFormPage />
-          </Route>
 
           <Route path="/contact">
             <Contact/>
