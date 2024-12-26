@@ -1,0 +1,49 @@
+
+
+.sPageForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.sPageEmail{
+    display: flex;
+    flex-direction: column;
+}
+
+.sPageLogin{
+    text-decoration: none;
+    color: blue;
+}
+
+.sPageInput{
+    background-color: white;
+}
+
+.sButton{
+    background-color: #209CEE;
+    border: 2px solid black;
+
+    font-weight: bold;
+    color: white;
+  
+    width: 10%;
+    height: 40px;
+    cursor: pointer;
+}
+
+.rowed{
+    display: flex;
+    flex-direction: row;
+    gap:5px;
+    margin-bottom: 10%;
+}
+
+/* Adjustments for Small Screens */
+@media screen and (max-width: 768px) {
+    .sButton{
+        width: 20%;
+    }
+}

@@ -1,0 +1,24 @@
+
+
+.footer{
+    font-weight: bold;
+}
+
+.footerContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chan{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footerWhole{
+    /* margin-top: 10%; */
+    border-top: 2px solid black;
+}

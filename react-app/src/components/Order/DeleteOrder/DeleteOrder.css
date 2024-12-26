@@ -1,0 +1,14 @@
+
+
+.deleteOrderModal{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.finish{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}

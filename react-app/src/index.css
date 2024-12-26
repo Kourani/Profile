@@ -1,0 +1,16 @@
+/* TODO Add site wide styles */ 
+
+    
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    padding-bottom: 10px;
+    z-index: 5;
+    background-color: whitesmoke;
+}
+
+/* * {
+    background-color: wheat
+
+} */

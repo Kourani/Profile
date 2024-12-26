@@ -1,0 +1,276 @@
+.top{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.firstBox{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    border-radius: 8%;
+}
+
+.theOut{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.firstTitle{
+    width: 80%;
+    font-size: 4vw;
+    font-weight: bold;
+    padding-bottom: 1%;
+    padding-top: 5%;
+    color: black;
+}
+
+.firstPara{
+    font-size: 20px;
+}
+
+.gridTitle{
+    font-size: 4vw;
+    color: black;
+}
+
+.gridOffers{
+    display: grid;
+    grid-template-columns: 10fr 10fr 10fr;
+    gap: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.item{
+    box-shadow: 0px 0px 10px 0px;
+    padding:10px 10px 10px 10px;
+}
+
+.gridImages{
+    width: 100%;
+    height: 20vw;
+    object-fit: cover;
+    
+}
+
+.gridTitles{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 2%;
+}
+
+
+.landingButtonsDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 50vw;
+}
+
+/*contact us and custom part*/
+.eachButton{
+    background-color: #209CEE;
+    width: 30%;
+    height: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-top: 10px;
+    color: white;
+    border: 2px solid black;
+}
+
+/*custom not logged in*/
+.customizable{
+    background-color: #209CEE;
+    border: 2px solid black;
+    color: white;
+
+    cursor: pointer;
+    font-weight: bold;
+
+    width: 30%;
+    height: 50px;
+
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+
+/*subscribe*/
+.subscription{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15%;
+}
+
+/*support and send message*/
+.mightGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 50px;
+}
+
+/*support*/
+.supported{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10%;
+    gap: 10px;
+}
+
+/*send message*/
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/*subscribe enter email*/
+.innerF{
+    width: 80%;
+    height: 5vh;
+}
+
+/* send message , enter message*/
+.innerA{
+    width: 80%;
+    height: 20vh;
+}
+
+/* send message button*/
+.innerB{
+    width: 80%;
+    height: 5vh;
+    cursor: pointer;
+}
+
+/* subscribe button*/
+.subscribeButton{
+    width: 80%;
+    height: 5vh;
+    margin-top: 1%;
+    cursor: pointer;
+    margin-bottom: 10%;
+}
+
+
+
+
+
+
+
+/* Adjustments for Small Screens */
+@media screen and (max-width: 768px) {
+    .firstBox {
+        width: 80%;
+        border-radius: 8%;
+    }
+
+    .firstTitle, .gridTitle, .firstTitleS {
+        font-size: 6vw;
+        width: 90%;
+    }
+
+    .firstPara {
+        font-size: 16px;
+    }
+
+    .gridOffers {
+        grid-template-columns: 1fr;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .item {
+        padding: 5px;
+    }
+
+    .gridImages {
+        height: auto;
+        width: 100%;
+    }
+
+    .topButtons {
+        flex-direction: column;
+        padding-top: 5%;
+    }
+
+    .eachButton {
+        width: 70%;
+        height: 40px;
+        margin-top: 2vh;
+    }
+
+    .customizable{
+        width: 90%;
+    }
+
+    .subscription {
+        padding-top: 10%;
+    }
+
+    .supported {
+        padding-left: 5%;
+        gap: 5px;
+    }
+
+    .innerF, .innerB {
+        width: 90%;
+    }
+
+    .subscribeButton{
+        width: 92%;;
+    }
+
+    .innerA {
+        width: 90%;
+        height: 15vh;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
