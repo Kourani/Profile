@@ -1,3 +1,21 @@
+.linkedDecoration{
+    text-decoration: none;
+
+}
+
+.linkedDecoration:hover{
+    background-color: black;
+    cursor: pointer;
+}
+
+.gridLinks{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+
 .top{
     position: relative;
     display: flex;

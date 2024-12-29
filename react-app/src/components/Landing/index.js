@@ -45,62 +45,21 @@ export default function Landing(){
         <>
 
             <div class="image-container">
+
                 <div class="overlay"></div>
+
                 <h1>Malak Kourani, MBA, BS</h1>
-            </div>
 
-
-
-            <div className="top">
-
-                {/* <div className="videoDiv">
-                    <video autoPlay muted loop id='video'>
-                        <source src='../../../images/flow.mp4' type="video/mp4"/>
-                    </video>
-                </div> */}
-
-                <div className="firstBox">
-
-                    {/* <div className="theOut">
-                        <img src='../../../images/intro.png' alt='image'/>
-                        <div className="firstTitle">Malak Kourani, MBA, BS</div>
-                    </div> */}
-
-
-
-                    {/* <div className="secondVid">
-                        <video autoPlay muted loop id='videoo'>
-                            <source src='../../../images/printed.mp4' type="video/mp4"/>
-                        </video>
-                    </div> */}
-
-                    {/* <div className="firstPara">
-                        Our comprehensive suite of services encompasses cutting-edge 3D printing, 
-                        precision laser engraving, and expert CNC cutting. Simplifying the process for our 
-                        clients, we've streamlined the pathway to production—simply upload the CAD file of your 
-                        desired part, and we'll seamlessly handle the entire fabrication journey. Should you find 
-                        yourself without a CAD file, worry not; our solution-driven approach allows you to upload 
-                        an image of the part you envision, leaving the intricate details and execution in our 
-                        capable hands. With a commitment to precision and innovation, we transform visions 
-                        into tangible realities, offering a seamless and accessible experience for all your 
-                        manufacturing needs.
-                    </div> */}
-
-                    {/* <div className="landingButtonsDiv">
-                        {
-                            userState?.user ? 
-                            <>
-                            {Quote()}
-                            <button className="eachButton" onClick={()=>{history.push('/order/upload')}}> Custom Part</button>
-                            </>
-
-                            :
-                            <button  className="customizable" onClick={()=>{history.push('/signup')}}> Need a custom part Sign Up</button>
-                        }
-                    </div> */}
-
+                <div className="gridLinks">
+                    <a className="linkedDecoration" href="https://www.instagram.com/aawbc/p/CviIDjNsXqk/">Home</a>
+                    <a className="linkedDecoration" href="https://www.linkedin.com/in/malakkourani/">LinkedIn</a>
+                    <a className="linkedDecoration" href="https://www.instagram.com/aawbc/p/CviIDjNsXqk/">About Me</a>
+                    <a className="linkedDecoration" href="https://www.instagram.com/aawbc/p/CviIDjNsXqk/">More</a>
                 </div>
+
             </div>
+
+
 
             <div className="top">
                 <h2 className="gridTitle"> Experience </h2>
