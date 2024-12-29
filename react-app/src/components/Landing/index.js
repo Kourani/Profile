@@ -5,9 +5,6 @@ import * as userActions from "../../store/session"
 import * as help from "../../context/help"
 // import * as images from "../../../public/images"
 
-import OpenModalButton from "../OpenModalButton"
-import Information from "../Modals/Information"
-
 import { useModal } from "../../context/Modal";
 
 

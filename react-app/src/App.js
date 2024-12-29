@@ -6,12 +6,9 @@ import { authenticate } from "./store/session";
 
 import ProtectedRoute from "./components/auth/ProtectedRoute"
 
-import Navigation from "./components/Navigation";
 import Footer from "./components/Footer"
 
 import Landing from "./components/Landing";
-
-import CreateUpload from "./components/Upload/CreateUpload";
 
 import Address from "./components/Other/Address";
 import Payment from "./components/Other/Payment";
@@ -19,12 +16,6 @@ import Review from "./components/Other/Review";
 
 import Contact from "./components/Other/Contact";
 import GetOrder from "./components/Order/GetOrder";
-import EditUpload from "./components/Upload/EditUpload";
-
-
-
-
-
 
 
 function App() {
@@ -37,8 +28,7 @@ function App() {
 
   return (
     <>
-      <Navigation isLoaded={isLoaded} />
-
+    
       {isLoaded && (
         <Switch>
 
@@ -62,14 +52,6 @@ function App() {
             <Address/>
           </ProtectedRoute>
 
-          <ProtectedRoute path = '/order/:partId/edit'>
-            <EditUpload/>
-          </ProtectedRoute>
-
-
-          <ProtectedRoute path ="/order/upload">
-            <CreateUpload/>
-          </ProtectedRoute>
 
           <Route exact path="/">
             <Landing/>
