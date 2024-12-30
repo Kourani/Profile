@@ -12,7 +12,7 @@ import { useDispatch, useSelector } from "react-redux"
 import { useHistory } from 'react-router-dom'
 
 
-export default function Landing(){
+export default function About(){
 
     const dispatch = useDispatch()
     const history = useHistory()
