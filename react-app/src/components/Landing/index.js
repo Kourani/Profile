@@ -399,9 +399,11 @@ export default function Landing(){
                 
                 <div className="supported">
 
-                    <div className="gridTitle">INSERT IMAGE</div>
+                    <div>
+                        <img className='gridImages' src='../../../images/two.png' alt='image'/>
+                    </div>
 
-                    <h4>Malak Kourani, MBA, BS</h4>
+                    <h2>Malak Kourani, MBA, BS</h2>
                     
                     <p>
                     {/* Women in the engineering field have often had to challenge the stereotype that femininity and technical expertise cannot coexist. The notion that being "pretty" or fashionable undermines one's ability to excel in a male-dominated profession is outdated. On the contrary, the creativity, attention to detail, and innovative problem-solving that women engineers bring to their projects are unparalleled. I can wear a stylish outfit or have my nails done and still lead complex engineering projects because beauty and brains are not mutually exclusive—they can coexist and even complement one another. */}
