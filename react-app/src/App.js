@@ -9,6 +9,7 @@ import ProtectedRoute from "./components/auth/ProtectedRoute"
 import Footer from "./components/Footer"
 
 import Landing from "./components/Landing";
+import About from "./components/About"
 
 
 function App() {
@@ -24,6 +25,10 @@ function App() {
     
       {isLoaded && (
         <Switch>
+
+          <Route exact path="/about">
+            <About/>
+          </Route>
 
           <Route exact path="/">
             <Landing/>

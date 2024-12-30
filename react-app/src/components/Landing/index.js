@@ -51,10 +51,10 @@ export default function Landing(){
                 <h1>Malak Kourani, MBA, BS</h1>
 
                 <div className="gridLinks">
-                    <a className="linkedDecoration" href="https://www.instagram.com/aawbc/p/CviIDjNsXqk/">Home</a>
+                    <a className="linkedDecoration" href="/">Home</a>
                     <a className="linkedDecoration" href="https://www.linkedin.com/in/malakkourani/">LinkedIn</a>
-                    <a className="linkedDecoration" href="https://www.instagram.com/aawbc/p/CviIDjNsXqk/">About Me</a>
-                    <a className="linkedDecoration" href="https://www.instagram.com/aawbc/p/CviIDjNsXqk/">More</a>
+                    <a className="linkedDecoration" href="/about">About Me</a>
+                    <a className="linkedDecoration" href="/more">More</a>
                 </div>
 
             </div>
@@ -74,7 +74,7 @@ export default function Landing(){
 
                         <h3 className="gridTitles">Software Engineer</h3>
 
-                        <div>
+                        {/* <div>
                             <ul>
                                 <li>
                                 Proficiency in programming languages (e.g., Python, Java, C++, JavaScript) and frameworks (e.g., React, Spring).
@@ -111,7 +111,7 @@ export default function Landing(){
                                 Skills in designing software solutions that scale to meet growing user demands.
                                 </li>
                             </ul>
-                        </div>
+                        </div> */}
 
                     </div>
 
@@ -121,44 +121,35 @@ export default function Landing(){
                             <img className='gridImages' src='../../../images/white.jpg' alt='image'/>
                         </div>
 
-                        <h3 className="gridTitles">Performance Parts D&R Engineer</h3>
+                        <h3 className="gridTitles">Performance Parts Design & Release Engineer</h3>
 
                         <div>
                             <ul>
                                 <li>
-                                Proficiency in CAD software for creating and refining component designs.
-                                Strong analytical skills for evaluating system performance and troubleshooting issues.
+                                    Enhanced skill set in CAD software for component designs.
+                                    Strong analytical skills for evaluating system performance and troubleshooting issues.
                                 </li>
 
                                 <li>
-                                Expertise in addressing complex engineering challenges and delivering creative solutions.
-                                Experience applying innovative methods to optimize performance and quality.
+                                    Experience in addressing complex engineering challenges and delivering creative solutions.
+                                    Experience applying innovative methods to optimize performance and quality.
                                 </li>
 
                                 <li>
-                                Ability to manage timelines, budgets, and cross-functional collaboration to deliver projects on time.
-                                Proficiency in balancing competing priorities while maintaining attention to detail.
+                                    Experience in managing timelines, budgets, and cross-functional collaboration to deliver projects on time.
+                                    Proficiency in balancing competing priorities while maintaining attention to detail.
                                 </li>
 
                                 <li>
-                                Experience working with diverse teams, including suppliers, testing groups, and manufacturing partners.
-                                Strong ability to communicate technical concepts effectively through presentations and reports.
+                                    Experience working with diverse teams, including suppliers, testing groups, and manufacturing partners.
+                                    Ensured that all stakeholders remain aligned on project progress in order to meet timelines and deliver.
                                 </li>
 
                                 <li>
-                                Knowledge of performance testing methods and tools to ensure components meet rigorous standards.
-                                Experience conducting root cause analysis and implementing iterative design improvements.
+                                    Knowledge of performance testing methods and tools to ensure components meet rigorous standards.
+                                    Gained familiarity with production processes, including material selection and quality control.
                                 </li>
 
-                                <li>
-                                Understanding of automotive industry trends, standards, and regulations.
-                                Commitment to staying updated on advancements in performance parts and materials.
-                                </li>
-
-                                <li>
-                                Practical experience in prototyping and fine-tuning designs for real-world applications.
-                                Familiarity with production processes, including material selection and quality control.
-                                </li>
                             </ul>
                         </div>
 
@@ -166,7 +157,7 @@ export default function Landing(){
 
                     <div className="item">
                         <div>
-                            <img className='gridImages' src='../../../images/white.jpg' alt='image'/>
+                            <img className='gridImages' src='../../../images/three.png' alt='image'/>
                         </div>
 
                         <h3 className="gridTitles">Diagnositc Service Planning Engineer</h3>
@@ -175,12 +166,12 @@ export default function Landing(){
                             <ul>
                                 <li>
                                     Advanced knowledge of system diagnostics, failure analysis, and predictive maintenance.
-                                    Proficiency in software tools and technologies for diagnostics and data analysis.
+                                    Gained a working knowledge of software tools and technologies for diagnostics and data analysis.
                                 </li>
 
                                 <li>
                                     Strong ability to interpret system data and identify underlying issues.
-                                    Expertise in designing efficient diagnostic strategies and solutions.
+                                    Experience in designing efficient diagnostic strategies and solutions.
                                 </li>
 
                                 <li>
@@ -198,15 +189,6 @@ export default function Landing(){
                                     Ability to work within multidisciplinary teams to align diagnostic goals with broader objectives.
                                 </li>
 
-                                <li>
-                                    Staying updated with the latest diagnostic technologies and incorporating innovative practices.
-                                    Quick adaptability to evolving project needs and technological advancements.
-                                </li>
-
-                                <li>
-                                    Tailoring diagnostic solutions to meet client-specific requirements.
-                                    Providing exceptional technical support to improve system reliability and performance.
-                                </li>
                             </ul>
                         </div>
                     </div>
@@ -219,38 +201,38 @@ export default function Landing(){
                         <div>
                             <ul>
                                 <li>
-                                Development of mentoring and coaching techniques to guide and inspire others.
-                                Ability to motivate and empower individuals to achieve their goals.
+                                    Development of mentoring and coaching techniques to guide and inspire others.
+                                    Ability to motivate and empower individuals to achieve their goals.
                                 </li>
 
                                 <li>
-                                Enhanced ability to convey complex concepts clearly and effectively.
-                                Strengthened interpersonal skills through one-on-one and group mentoring interactions.
+                                    Enhanced ability to convey complex concepts clearly and effectively.
+                                    Strengthened interpersonal skills through one-on-one and group mentoring interactions.
                                 </li>
 
                                 <li>
-                                Experience addressing academic, professional, and personal challenges faced by mentees.
-                                Development of conflict resolution strategies to manage and mediate issues effectively.
+                                    Experience addressing academic, professional, and personal challenges faced by mentees.
+                                    Development of conflict resolution strategies to manage and mediate issues effectively.
                                 </li>
 
                                 <li>
-                                Balancing mentoring responsibilities with academic or professional commitments.
-                                Creating structured plans and timelines to help mentees stay on track.
+                                    Balancing mentoring responsibilities with academic or professional commitments.
+                                    Creating structured plans and timelines to help mentees stay on track.
                                 </li>
 
                                 <li>
-                                Building a supportive and inclusive environment through active listening and understanding.
-                                Ability to recognize and adapt to the diverse needs of mentees.
+                                    Building a supportive and inclusive environment through active listening and understanding.
+                                    Ability to recognize and adapt to the diverse needs of mentees.
                                 </li>
 
                                 <li>
-                                Opportunities to expand professional networks by facilitating connections for mentees.
-                                Learning about new resources and tools while guiding mentees through them.
+                                    Opportunities to expand professional networks by facilitating connections for mentees.
+                                    Learning about new resources and tools while guiding mentees through them.
                                 </li>
 
                                 <li>
-                                Experience explaining academic concepts and career strategies effectively.
-                                Strengthened ability to present ideas in a clear and engaging manner.
+                                    Experience explaining academic concepts and career strategies effectively.
+                                    Strengthened ability to present ideas in a clear and engaging manner.
                                 </li>
 
                             </ul>
@@ -263,7 +245,7 @@ export default function Landing(){
                         </div>
                         
                         <h3 className="gridTitles">
-                            <a href="https://www.instagram.com/aawbc/p/CviIDjNsXqk/">Business Intern</a>
+                            <a className='linkedGrid' href="https://www.instagram.com/aawbc/p/CviIDjNsXqk/">Business Intern</a>
                         </h3>
 
                         <div>
@@ -310,38 +292,33 @@ export default function Landing(){
                         <div>
                             <ul>
                                 <li>
-                                In-depth understanding of tax laws, regulations, and compliance requirements for various entities.
-                                Proficiency in identifying tax-saving opportunities and ensuring accurate filings.
+                                    Gained exposure to tax laws, regulations, and compliance requirements for various entities.
+                                    Experience in identifying tax-saving opportunities and ensuring accurate filings.
                                 </li>
 
                                 <li>
-                                Ability to work with complex financial data while maintaining high levels of accuracy.
-                                Strong attention to detail when preparing and reviewing tax returns and supporting documents.
+                                    Capable of working with complex financial data while maintaining high levels of accuracy.
+                                    Strong attention to detail when preparing and reviewing tax returns and supporting documents.
                                 </li>
 
                                 <li>
-                                Expertise in analyzing financial information and identifying potential discrepancies or opportunities.
-                                Experience in resolving tax-related issues and applying solutions that benefit clients.
+                                    Experience in analyzing financial information and identifying potential discrepancies or opportunities.
+                                    Experience in resolving tax-related issues and applying solutions that benefit clients.
                                 </li>
 
                                 <li>
-                                Strong verbal and written communication skills for interacting with clients and explaining complex tax information in an understandable way.
-                                Ability to provide clear guidance on tax filing processes and compliance requirements.
+                                    Experience managing multiple client files and meeting deadlines during peak tax season.
+                                    Efficient handling of client inquiries, document collection, and tax preparation tasks within a given timeframe.
                                 </li>
 
                                 <li>
-                                Experience managing multiple client files and meeting deadlines during peak tax season.
-                                Efficient handling of client inquiries, document collection, and tax preparation tasks within a given timeframe.
+                                    Handling sensitive financial information with discretion and adhering to strict confidentiality standards.
+                                    Ensuring that all tax preparations comply with ethical and legal requirements.
                                 </li>
 
                                 <li>
-                                Handling sensitive financial information with discretion and adhering to strict confidentiality standards.
-                                Ensuring that all tax preparations comply with ethical and legal requirements.
-                                </li>
-
-                                <li>
-                                Familiarity with tax preparation software and tools for efficient and accurate filing.
-                                Experience working with spreadsheets and databases to organize financial data and ensure accuracy.
+                                    Familiarity with tax preparation software and tools for efficient and accurate filing.
+                                    Experience working with spreadsheets and databases to organize financial data and ensure accuracy.
                                 </li>
                             </ul>
                         </div>
@@ -355,39 +332,35 @@ export default function Landing(){
                         <div>
                             <ul>
                                 <li>
-                                Experience diagnosing and resolving technical and operational issues in real-world settings.
-                                Development of critical thinking skills for analyzing systems and implementing improvements.
+                                    Experience diagnosing and resolving technical and operational issues in real-world settings.
+                                    Development of critical thinking skills for analyzing systems and implementing improvements.
                                 </li>
 
                                 <li>
-                                Proficiency in interpreting operational data to identify trends and inefficiencies.
-                                Ability to use insights from data analysis to inform decisions and improve processes.  
+                                    Proficiency in interpreting operational data to identify trends and inefficiencies.
+                                    Ability to use insights from data analysis to inform decisions and improve processes.  
                                 </li>
 
                                 <li>
-                                Exposure to managing projects, from identifying requirements to implementing solutions.
-                                Experience in balancing multiple tasks and meeting deadlines within a collaborative environment.
+                                    Exposure to managing projects, from identifying requirements to implementing solutions.
+                                    Experience in balancing multiple tasks and meeting deadlines within a collaborative environment.
                                 </li>
 
                                 <li>
-                                Strong skills in creating clear and concise technical documentation and workflows.
-                                Effective communication with technical and non-technical stakeholders to align goals.
+                                    Strong skills in creating clear and concise technical documentation and workflows.
+                                    Effective communication with technical and non-technical stakeholders to align goals.
                                 </li>
 
                                 <li>
-                                Hands-on experience working with service and engineering teams to achieve shared objectives.
-                                Enhanced interpersonal skills from coordinating across departments.
+                                    Hands-on experience working with service and engineering teams to achieve shared objectives.
+                                    Enhanced interpersonal skills from coordinating across departments.
                                 </li>
 
                                 <li>
-                                Ability to adapt to dynamic environments and rapidly shifting priorities.
-                                Development of innovative approaches to streamline service and engineering operations.
+                                    Capable of adapting to dynamic environments and rapidly shifting priorities.
+                                    Developed innovative approaches to streamline service and engineering operations.
                                 </li>
 
-                                <li>
-                                Familiarity with service management tools and engineering software.
-                                Understanding of operational workflows and their alignment with engineering principles.
-                                </li>
                             </ul>
                         </div>
                     </div>
@@ -400,18 +373,28 @@ export default function Landing(){
                 <div className="supported">
 
                     <div>
-                        <img className='gridImages' src='../../../images/two.png' alt='image'/>
+                        <img className='imageTwo' src='../../../images/two.png' alt='image'/>
                     </div>
 
                     <h2>Malak Kourani, MBA, BS</h2>
                     
-                    <p>
+                    <p className="texted">
                     {/* Women in the engineering field have often had to challenge the stereotype that femininity and technical expertise cannot coexist. The notion that being "pretty" or fashionable undermines one's ability to excel in a male-dominated profession is outdated. On the contrary, the creativity, attention to detail, and innovative problem-solving that women engineers bring to their projects are unparalleled. I can wear a stylish outfit or have my nails done and still lead complex engineering projects because beauty and brains are not mutually exclusive—they can coexist and even complement one another. */}
-                    "Bravery is not the absence of fear but the ability to continue despite being afraid. 
-                    It is through fear that we become fearless, through weakness that we gain strength, 
-                    and through hardships 
-                    that we gain confidence. Ultimately that is what builds who we are as people, 
-                    that is what brings out the best of humanity."
+                    
+                    I'm a woman filled with desire and passion wandering the earth letting curiosity guide her. 
+                    I graduated from high school without a plan, I didn't really know what to expect, what to major in, 
+                    or even if I should entertain the idea of college. The only thing I really knew was that I thrived in 
+                    two core subjects: mathematics and science. So, four years later I graduated from the University of 
+                    Michigan Dearborn with a bachelor's degree in Mechanical Engineering and a bachelor's 
+                    degree in Biomedical Engineering. 
+                    </p>
+
+                    <p className="texted">
+                    Today I'm a second year graduate student working towards a master's degree in business administration. 
+                    The master’s degree will enhance my skill set and pave way for stronger leadership and critical thinking skills. 
+                    It will strengthen my ability to make tough calls at the right time and manage demanding situations. Overall, 
+                    obtaining an MBA degree will provide a new perspective to business, teams and collaboration. It will certainly 
+                    complement my bachelor’s degree and allow for further amplification of skills that may last a lifetime.
                     </p>
 
                 </div>
