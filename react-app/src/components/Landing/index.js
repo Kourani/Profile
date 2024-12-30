@@ -197,7 +197,7 @@ export default function Landing(){
                         <div>
                         <img className='gridImages' src='../../../images/white.jpg' alt='image'/>
                         </div>
-                        <h3 className="gridTitles">Mentor</h3>
+                        <h3 className="gridTitles">Graduate Student Mentor</h3>
                         <div>
                             <ul>
                                 <li>
@@ -284,7 +284,7 @@ export default function Landing(){
                         </div>
                     </div>
 
-                    <div className="item">
+                    {/* <div className="item">
                         <div>
                         <img className='gridImages' src='../../../images/white.jpg' alt='image'/>
                         </div>
@@ -322,7 +322,7 @@ export default function Landing(){
                                 </li>
                             </ul>
                         </div>
-                    </div>
+                    </div> */}
 
                     <div className="item">
                         <div>
