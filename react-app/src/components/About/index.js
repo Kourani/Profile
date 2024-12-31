@@ -18,6 +18,7 @@ export default function About(){
                 <div className="gridLinks">
                     <a className="linkedDecoration" href="/">Home</a>
                     <a className="linkedDecoration" href="https://www.linkedin.com/in/malakkourani/">LinkedIn</a>
+                    <a className="linkedDecoration" href="https://github.com/Kourani">GitHub</a>
                     <a className="linkedDecoration" href="/about">About Me</a>
                     <a className="linkedDecoration" href="/more">More</a>
                 </div>
