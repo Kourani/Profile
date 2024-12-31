@@ -375,7 +375,7 @@ export default function Landing(){
                         <div>
                             <img className='gridImages' src='../../../images/white.jpg' alt='image'/>
                         </div>
-                        <h3 className="gridTitles">Mechanical Engineering</h3>
+                        <h3 className="gridTitles"> Business Administration </h3>
                     </div>
 
                     <div className="item">
@@ -389,7 +389,7 @@ export default function Landing(){
                         <div>
                         <img className='gridImages' src='../../../images/white.jpg' alt='image'/>
                         </div>
-                        <h3 className="gridTitles">Business Administration</h3>
+                        <h3 className="gridTitles"> Mechanical Engineering </h3>
                     </div>
                 </div>
             </div>
