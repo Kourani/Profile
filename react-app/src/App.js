@@ -4,8 +4,6 @@ import { Route, Switch } from "react-router-dom";
 
 import { authenticate } from "./store/session";
 
-import ProtectedRoute from "./components/auth/ProtectedRoute"
-
 import Footer from "./components/Footer"
 
 import Landing from "./components/Landing";

@@ -1,12 +1,5 @@
 
 import "./Landing.css";
-import * as userActions from "../../store/session"
-
-import * as help from "../../context/help"
-// import * as images from "../../../public/images"
-
-import { useModal } from "../../context/Modal";
-
 
 import React, { useEffect, useState, useRef } from "react"
 import { useDispatch, useSelector } from "react-redux"
@@ -14,32 +7,6 @@ import { useHistory } from 'react-router-dom'
 
 
 export default function Landing(){
-
-    const dispatch = useDispatch()
-    const history = useHistory()
-    const ulRef = useRef();
-
-    const { closeModal } = useModal();
-    const [showMenu, setShowMenu] = useState(false);
-
-    const closeMenu = (e) => {
-        if (!ulRef.current.contains(e.target)) {
-          setShowMenu(false);
-        }
-    };
-
-
-    const userState = useSelector(state=>state.session)
-
-    console.log(userState, 'userState')
-
-
-    const handleSubmit = async (e) => {
-        e.preventDefault()
-
-        help.subscribe()
-    }
-
 
     return (
         <>
@@ -125,6 +92,7 @@ export default function Landing(){
 
                         <div>
                             <ul>
+
                                 <li>
                                     Enhanced skill set in CAD software for component designs.
                                     Strong analytical skills for evaluating system performance and troubleshooting issues.
@@ -165,27 +133,25 @@ export default function Landing(){
                         <div>
                             <ul>
                                 <li>
-                                    Advanced knowledge of system diagnostics, failure analysis, and predictive maintenance.
-                                    Gained a working knowledge of software tools and technologies for diagnostics and data analysis.
+                                    Gained a working knowledge of system diagnostics, failure analysis, software tools and technologies for diagnostics and data analysis.
                                 </li>
 
                                 <li>
-                                    Strong ability to interpret system data and identify underlying issues.
+                                    Collected and analyzed system data to identify underlying issues.
                                     Experience in designing efficient diagnostic strategies and solutions.
                                 </li>
 
                                 <li>
-                                    Experience managing diagnostic tool development from conception to implementation.
-                                    Ability to balance multiple projects while meeting deadlines and quality standards.
+                                    Balanced multiple projects while meeting deadlines and quality standards.
                                 </li>
 
                                 <li>
-                                    Clear and concise reporting of diagnostic findings and system performance.
+                                    Reported diagnostic findings and repetitive issues in a clear and concise manner.
                                     Strong presentation skills for conveying technical concepts to non-technical audiences.
                                 </li>
 
                                 <li>
-                                    Effective interaction with engineering, operations, and maintenance teams.
+                                    Collaborated with engineering, operations, and maintenance teams.
                                     Ability to work within multidisciplinary teams to align diagnostic goals with broader objectives.
                                 </li>
 
@@ -202,11 +168,11 @@ export default function Landing(){
                             <ul>
                                 <li>
                                     Development of mentoring and coaching techniques to guide and inspire others.
-                                    Ability to motivate and empower individuals to achieve their goals.
+                                    Motivated and empowered individuals to achieve their goals.
                                 </li>
 
                                 <li>
-                                    Enhanced ability to convey complex concepts clearly and effectively.
+                                    Conveyed complex concepts clearly and effectively.
                                     Strengthened interpersonal skills through one-on-one and group mentoring interactions.
                                 </li>
 
@@ -216,18 +182,18 @@ export default function Landing(){
                                 </li>
 
                                 <li>
-                                    Balancing mentoring responsibilities with academic or professional commitments.
-                                    Creating structured plans and timelines to help mentees stay on track.
+                                    Balanced mentoring responsibilities with academic or professional commitments.
+                                    Created structured plans and timelines to help mentees stay on track.
                                 </li>
 
                                 <li>
-                                    Building a supportive and inclusive environment through active listening and understanding.
-                                    Ability to recognize and adapt to the diverse needs of mentees.
+                                    Built a supportive and inclusive environment through active listening and understanding.
+                                    Recognized and adapted to the diverse needs of mentees.
                                 </li>
 
                                 <li>
-                                    Opportunities to expand professional networks by facilitating connections for mentees.
-                                    Learning about new resources and tools while guiding mentees through them.
+                                    Provided opportunities to expand professional networks by facilitating connections for mentees.
+                                    Learned about new resources and tools while guiding mentees through them.
                                 </li>
 
                                 <li>
@@ -261,23 +227,17 @@ export default function Landing(){
                                 </li>
 
                                 <li>
-                                    Task prioritization and meet deadlines in a fast-paced environment.
+                                    Task prioritization and met deadlines in a fast-paced environment.
                                     Strengthened multitasking skills by juggling multiple projects simultaneously.
                                 </li>
 
                                 <li>
-                                    Familiarity with business tools such as Excel, PowerPoint, and project management software.
-                                    Basic knowledge of data visualization tools and CRM platforms.
+                                    Amplified skills with business tools such as Excel, PowerPoint, and project management software.
                                 </li>
 
                                 <li>
                                     Ability to learn quickly and adapt to changing priorities and new challenges.
                                     Strengthened decision-making skills under tight timelines.
-                                </li>
-
-                                <li>
-                                    Opportunities to take ownership of projects and demonstrate initiative.
-                                    Development of an entrepreneurial mindset for tackling business challenges.
                                 </li>
                             </ul>
 
@@ -332,13 +292,12 @@ export default function Landing(){
                         <div>
                             <ul>
                                 <li>
-                                    Experience diagnosing and resolving technical and operational issues in real-world settings.
                                     Development of critical thinking skills for analyzing systems and implementing improvements.
                                 </li>
 
                                 <li>
-                                    Proficiency in interpreting operational data to identify trends and inefficiencies.
-                                    Ability to use insights from data analysis to inform decisions and improve processes.  
+                                    Interpreted operational data to identify trends and inefficiencies.
+                                    Applied insights from data analysis to inform decisions and improve processes.  
                                 </li>
 
                                 <li>
@@ -347,17 +306,7 @@ export default function Landing(){
                                 </li>
 
                                 <li>
-                                    Strong skills in creating clear and concise technical documentation and workflows.
-                                    Effective communication with technical and non-technical stakeholders to align goals.
-                                </li>
-
-                                <li>
-                                    Hands-on experience working with service and engineering teams to achieve shared objectives.
-                                    Enhanced interpersonal skills from coordinating across departments.
-                                </li>
-
-                                <li>
-                                    Capable of adapting to dynamic environments and rapidly shifting priorities.
+                                    Adapted to dynamic environments and rapidly shifting priorities.
                                     Developed innovative approaches to streamline service and engineering operations.
                                 </li>
 
