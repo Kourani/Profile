@@ -13,13 +13,14 @@
     height: fit-content;
     width:fit-content;
     z-index: 9999;
-    color: black;
+    color: #243665;
     font-size: x-large;
 }
 
 .linkedDecoration:hover{
     cursor: pointer;
-    color: red;
+    color: white;
+    font-weight: bold;
 }
 
 .gridLinks{
