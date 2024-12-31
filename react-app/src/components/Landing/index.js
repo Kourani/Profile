@@ -8,6 +8,62 @@ import { useHistory } from 'react-router-dom'
 
 export default function Landing(){
 
+    const TypingEffect = ({text, speed=100, cursorSpeed=500, pauseDuration=10000}) => {
+        
+        const [display, setDisplay] = useState("")
+        const [isTyping, setIsTyping] = useState(true)
+        const [cursor, setCursor] = useState(true)
+
+        useEffect(() => {
+            
+            let index = 0
+            let typingInterval
+            
+            const type = () => {
+
+                setIsTyping(true)
+                index = 0
+                setDisplay("")
+
+                const typingInterval = setInterval ( () => {
+
+                    if(index < text.length){
+                        setDisplay((prev)=> prev + text[index])
+                        index ++
+                    } else {
+
+                        clearInterval(typingInterval)
+                        setIsTyping(false)
+
+                        setTimeout(()=>{
+                            type()
+                        }, pauseDuration)
+                    }
+                }, speed)
+            }
+
+            type()
+
+            return () => clearInterval(typingInterval)
+        }, [text, speed, pauseDuration])
+
+
+        useEffect(() => {
+            const cursorInterval = setInterval( () => {
+                setCursor((prev)=> !prev)
+            }, cursorSpeed)
+
+            return () => clearInterval(cursorInterval)
+        }, cursorSpeed)
+
+        return (
+            <div style={{fontFamily:"monospace", fontSize: "1.2rem"}}>
+                {display}
+                {cursor && (isTyping || display !== text) && <span>|</span>}
+            </div>
+        )
+    }
+
     return (
         <>
 
@@ -15,7 +71,9 @@ export default function Landing(){
 
                 <div class="overlay"></div>
 
-                <h1>Malak Kourani, MBA, BS</h1>
+                <h1>
+                    <TypingEffect text="Malak Kourani, MBA, BS" speed={100} pauseDuration={1000}/>
+                </h1>
 
                 <div className="gridLinks">
                     <a className="linkedDecoration" href="/">Home</a>
