@@ -5,7 +5,7 @@ import "../../context/help";
 import React, { useEffect, useState, useRef } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { useHistory } from 'react-router-dom'
-import { mail, phone, visa } from "../../context/help";
+import { mail, phone } from "../../context/help";
 
 
 export default function Landing(){
@@ -383,6 +383,24 @@ export default function Landing(){
         ) 
     }
 
+    //rolling bar 
+    const Bar = () => {
+        
+        const info = ['a', 'b', 'c', 'd', 'e']
+
+        return (
+            <div className="contain">
+                <div className="bar">
+                    {info.map((char,index) =>(
+                        <span key={index} className="word">
+                            {info}
+                        </span>
+                    ))}
+                </div>
+            </div>
+        )
+    }
+
     return (
         <>
 
@@ -408,6 +426,7 @@ export default function Landing(){
 
             <div className="top">
                 
+                {Bar()}
                 <h2 className="gridTitle"> Experience </h2>
 
                 {All()}

@@ -1,7 +1,4 @@
 
-
-
-
 export function mail(){
     return(
         <i className="fa-solid fa-envelope"></i>

@@ -64,13 +64,18 @@
 
 .imageTwo{
 
+    width: 100%;
+    height: 20vw;
+    object-fit: cover;
+    border: 3px solid black;
 
-    width: 80%;
+
+    /* width: 80%;
     height: 100%;
     border: 2px solid black;
-    border-radius: 50%; /* Makes the element circular */
+    border-radius: 50%; 
     text-align: center;
-    line-height: 100px;
+    line-height: 100px; */
 }
 
 
@@ -282,6 +287,44 @@
     cursor: pointer;
     margin-bottom: 10%;
 }
+
+
+/*WITHIN:::::: FOR THE BAR OF WORDS ................*/
+.contain{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.bar{
+    display: flex;
+    animation: roll 60s linear infinite;
+}
+
+.word{
+    flex-shrink: 0;
+    margin-right: 30px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+@keyframes roll {
+
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+    
+}
+
+ /* WITHIN */
 
 
 
