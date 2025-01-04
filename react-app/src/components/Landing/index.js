@@ -5,7 +5,7 @@ import "../../context/help";
 import React, { useEffect, useState, useRef } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { useHistory } from 'react-router-dom'
-import { mail, phone } from "../../context/help";
+import { download, github, linkedin, mail, phone, resume } from "../../context/help";
 
 
 export default function Landing(){
@@ -64,6 +64,27 @@ export default function Landing(){
                 {display}
                 {cursor && (isTyping || display !== text) && <span>|</span>}
             </div>
+        )
+    }
+
+    const Download = () => {
+
+        // event.preventDefault();
+
+        const link = document.createElement("a")
+        link.href="/INVOICE.pdf"
+        link.download = "INVOICE.pdf"
+        
+        document.body.appendChild(link)
+
+        link.click()
+
+        document.body.removeChild(link)
+
+        return(
+            <>
+                {download()} Resume
+            </>
         )
     }
 
@@ -414,12 +435,17 @@ export default function Landing(){
 
                 <div className="gridLinks">
                     <a className="linkedDecoration" href="/">Home</a>
-                    <a className="linkedDecoration" href="https://www.linkedin.com/in/malakkourani/">LinkedIn</a>
-                    <a className="linkedDecoration" href="https://github.com/Kourani">GitHub</a>
-                    <a className="linkedDecoration" href="/about">About Me</a>
+                    <a className="linkedDecoration" href="https://www.linkedin.com/in/malakkourani/"> {linkedin()} LinkedIn</a>
+                    <a className="linkedDecoration" href="https://github.com/Kourani"> {github()} GitHub</a>
+                    <a className="linkedDecoration" href="/about"> About Me</a>
+
+                    <button onClick={Download} className="linkedDecoration">
+                        {download()} Resume
+                    </button>
+
                     <a className="linkedDecoration" href="/more">More</a>
                 </div>
-
+                
             </div>
 
 
@@ -449,18 +475,22 @@ export default function Landing(){
                         <ul> {mail()} kourani@umich.edu</ul> 
                     </div>
                     
-                    <p className="texted">
-                    {/* Women in the engineering field have often had to challenge the stereotype that femininity and technical expertise cannot coexist. The notion that being "pretty" or fashionable undermines one's ability to excel in a male-dominated profession is outdated. On the contrary, the creativity, attention to detail, and innovative problem-solving that women engineers bring to their projects are unparalleled. I can wear a stylish outfit or have my nails done and still lead complex engineering projects because beauty and brains are not mutually exclusive—they can coexist and even complement one another. */}
-                    
-                    </p>
+                    {/* <p>
+                    Women in the engineering field have often had to challenge the stereotype that femininity and technical 
+                    expertise cannot coexist. The notion that being "pretty" or fashionable undermines one's ability to excel 
+                    in a male-dominated profession is outdated. On the contrary, the creativity, attention to detail, and innovative 
+                    problem-solving that women engineers bring to their projects are unparalleled. I can wear a stylish outfit or have 
+                    my nails done and still lead complex engineering projects because beauty and brains are not mutually exclusive—they 
+                    can coexist and even complement one another.
+                    </p> */}
 
-                    <p className="texted">
+                    {/* <p>
                     Today I'm a second year graduate student working towards a master's degree in business administration. 
                     The master’s degree will enhance my skill set and pave way for stronger leadership and critical thinking skills. 
                     It will strengthen my ability to make tough calls at the right time and manage demanding situations. Overall, 
                     obtaining an MBA degree will provide a new perspective to business, teams and collaboration. It will certainly 
                     complement my bachelor’s degree and allow for further amplification of skills that may last a lifetime.
-                    </p>
+                    </p> */}
 
                 </div>
                 

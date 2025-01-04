@@ -7,7 +7,8 @@ import { authenticate } from "./store/session";
 import Footer from "./components/Footer"
 
 import Landing from "./components/Landing";
-import About from "./components/About"
+import About from "./components/About";
+import Resume from "./components/Resume";
 
 
 function App() {
@@ -23,6 +24,10 @@ function App() {
     
       {isLoaded && (
         <Switch>
+
+          <Route exact path="/resume">
+            <Resume/>
+          </Route>
 
           <Route exact path="/about">
             <About/>

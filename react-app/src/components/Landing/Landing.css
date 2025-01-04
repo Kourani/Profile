@@ -1,4 +1,6 @@
 
+/* background-color: #b2b2b2; this is the exact shade that is defaulting to when I put white */
+
 .showAll{
     cursor: pointer;
     background-color: whitesmoke;
@@ -22,7 +24,8 @@
 }
 
 .linkedDecoration{
-    text-decoration: none;
+
+    all: unset;
     height: fit-content;
     width:fit-content;
     z-index: 9999;
