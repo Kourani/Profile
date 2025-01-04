@@ -1,6 +1,7 @@
 
 /* background-color: #b2b2b2; this is the exact shade that is defaulting to when I put white */
 
+/*For the show all button for experience content*/
 .showAll{
     cursor: pointer;
     background-color: whitesmoke;
@@ -13,6 +14,8 @@
     font-weight: 900;
     font-size: medium;
 }
+
+/* for the intern link to the instagram page */
 .linkedGrid{
     text-decoration: none;
     color: black;
@@ -23,8 +26,8 @@
     color: red;
 }
 
+/* affects the a tags... all the clickables on the bar at the beginning of the page*/
 .linkedDecoration{
-
     all: unset;
     height: fit-content;
     width:fit-content;
@@ -38,6 +41,7 @@
     color: white;
     font-weight: bold;
 }
+
 
 .gridLinks{
     display: flex;
@@ -281,16 +285,6 @@
     height: 5vh;
     cursor: pointer;
 }
-
-/* subscribe button*/
-.subscribeButton{
-    width: 80%;
-    height: 5vh;
-    margin-top: 1%;
-    cursor: pointer;
-    margin-bottom: 10%;
-}
-
 
 /*WITHIN:::::: FOR THE BAR OF WORDS ................*/
 .contain{

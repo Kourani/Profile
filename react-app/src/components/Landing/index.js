@@ -5,88 +5,11 @@ import "../../context/help";
 import React, { useEffect, useState, useRef } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { useHistory } from 'react-router-dom'
-import { download, github, linkedin, mail, phone, resume } from "../../context/help";
+
+import { Download, TypingEffect, download, github, linkedin, mail, phone, resume } from "../../context/help";
 
 
 export default function Landing(){
-
-    // to create a typing effect on the top of the page
-    const TypingEffect = ({text, speed=100, cursorSpeed=500, pauseDuration=10000}) => {
-        
-        const [display, setDisplay] = useState("")
-        const [isTyping, setIsTyping] = useState(true)
-        const [cursor, setCursor] = useState(true)
-
-        useEffect(() => {
-            
-            let index = 0
-            let typingInterval
-            
-            const type = () => {
-
-                setIsTyping(true)
-                index = 0
-                setDisplay("")
-
-                const typingInterval = setInterval ( () => {
-
-                    if(index < text.length){
-                        setDisplay((prev)=> prev + text[index])
-                        index ++
-                    } else {
-
-                        clearInterval(typingInterval)
-                        setIsTyping(false)
-
-                        setTimeout(()=>{
-                            type()
-                        }, pauseDuration)
-                    }
-                }, speed)
-            }
-
-            type()
-
-            return () => clearInterval(typingInterval)
-        }, [text, speed, pauseDuration])
-
-
-        useEffect(() => {
-            const cursorInterval = setInterval( () => {
-                setCursor((prev)=> !prev)
-            }, cursorSpeed)
-
-            return () => clearInterval(cursorInterval)
-        }, cursorSpeed)
-
-        return (
-            <div>
-                {display}
-                {cursor && (isTyping || display !== text) && <span>|</span>}
-            </div>
-        )
-    }
-
-    const Download = () => {
-
-        // event.preventDefault();
-
-        const link = document.createElement("a")
-        link.href="/INVOICE.pdf"
-        link.download = "INVOICE.pdf"
-        
-        document.body.appendChild(link)
-
-        link.click()
-
-        document.body.removeChild(link)
-
-        return(
-            <>
-                {download()} Resume
-            </>
-        )
-    }
 
     // to limit the content displayed in the experience section with a show all button to see more 
     const All = () => {
@@ -407,7 +330,7 @@ export default function Landing(){
     //rolling bar 
     const Bar = () => {
         
-        const info = ['a', 'b', 'c', 'd', 'e']
+        const info = ['Malak ', 'Malak ', 'Malak ', 'Malak ', 'Malak ']
 
         return (
             <div className="contain">
@@ -443,7 +366,7 @@ export default function Landing(){
                         {download()} Resume
                     </button>
 
-                    <a className="linkedDecoration" href="/more">More</a>
+                    {/* <a className="linkedDecoration" href="/more">More</a> */}
                 </div>
                 
             </div>
@@ -538,24 +461,6 @@ export default function Landing(){
                     </div>
                 </div>
             </div>
-
-
-            {/* <form className="subscription" onSubmit={handleSubmit}>
-            
-                <div className="gridTitle">
-                    Subscribe to our Newsletter
-                </div>
-
-                <input 
-                    className='innerF'
-                    type="email"
-                    name="email"
-                    placeholder="Enter your email"
-                    required
-                />
-
-                <button className="subscribeButton">Subscribe</button>
-            </form> */}
 
         </>
     )
