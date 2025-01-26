@@ -49,9 +49,13 @@
     align-items: center;
     width: 90%;
     height: 5%;
-    background-color: white;
-    /* background: linear-gradient(to right, #031D3E, #0560BB); */
+    /* background-color: white; */
+    background: linear-gradient(to right, grey,  whitesmoke, grey);
 }
+
+/* .gridLinks:hover{
+    background-color: #0109BD;
+} */
 
 /*support*/
 .supported{
