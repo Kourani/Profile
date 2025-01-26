@@ -392,6 +392,15 @@ export default function Landing(){
 
                     <h2>Malak Kourani, MBA, BS</h2>
 
+                    <p>
+                        With a unique academic background and a blend of both business and engineering, 
+                        Malak brings a rare combination of technical expertise and business insight. 
+                        Her hands on experience as both an engineer and a business intern has honned her ability 
+                        to tackle complex challenges while driving inovatve solutions. Ready to make an impact, 
+                        Malak is a dynamic professional eager to contribute to high performace teams and deliver 
+                        results at the intersection of engineering and business.
+                    </p>
+
                     <div>
                         <ul> {phone()} 313 775 5115</ul>
                         

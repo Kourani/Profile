@@ -1,13 +1,13 @@
 
-.about-image-container {
-
+/* Container for the background image */
+.Aimage-container {
     position: relative;
     width: 100%;
     height: 700px; /* Adjust the height as needed */
     background-image: url('../../images/two.png'); /* Replace with your image */
     background-size: cover;
     background-position: center;
-    color: #fff; /* Ensure text color is white for contrast */
+    color: white; /* Ensure text color is white for contrast */
     text-align: center;
     display: flex;
     justify-content: center;
@@ -16,7 +16,7 @@
   }
   
   /* Overlay to darken the background */
-  .about-image-container .about-overlay {
+  .Aimage-container .Aoverlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -26,3 +26,25 @@
     z-index: 1; /* Ensures overlay is above the image but behind the text */
   }
   
+  /* Ensure text appears above the overlay */
+  .Aimage-container h1,
+  .Aimage-container p {
+    position: relative;
+    z-index: 2; /* Makes sure text stays above the overlay */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
