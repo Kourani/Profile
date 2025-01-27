@@ -10,4 +10,7 @@ Logo
     font color: #243665
     font style: lustria 
     background color: #FFFFFF 
+
+
+    font color: #0109BD
     
