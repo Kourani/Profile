@@ -34,12 +34,12 @@
     z-index: 9999;
     color: #0109BD;
     font-size: x-large;
+    font-weight: bold;
 }
 
 .linkedDecoration:hover{
     cursor: pointer;
     color: white;
-    font-weight: bold;
 }
 
 
