@@ -7,10 +7,9 @@ export NODE_OPTIONS=--openssl-legacy-provider
 
 
 Logo
-    font color: #243665
-    font style: lustria 
-    background color: #FFFFFF 
-
-
     font color: #0109BD
+    font style: lustria --- main font on text 
+    background color: #FFFFFF 
     
+
+    font: playfair --- cursive in linked 
