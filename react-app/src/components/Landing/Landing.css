@@ -3,9 +3,7 @@
 
 /*For the show all button for experience content*/
 .showAll{
-    cursor: pointer;
-    background-color: whitesmoke;
-    border: none;
+    all: unset;
     margin-top: 20px;
     margin-right: 3%;
     position: absolute;
@@ -13,6 +11,12 @@
     font-family: 'Times New Roman', Times, serif;
     font-weight: 900;
     font-size: medium;
+}
+
+.showAll:hover{
+    cursor: pointer;
+    background-color: #0109BD;
+    color: white;
 }
 
 /* for the intern link to the instagram page */
